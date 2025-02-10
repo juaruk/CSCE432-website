@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 40px;
+    background-color: #a4cae9; /* Soft pink */
+    color: #333333; /* Dark gray for good contrast */
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #444800; /* Dark burgundy */
+    text-align: center;
+}
+h2 {
+    color: #051a60; /* Dark burgundy */
+}
+
+img {
+    --r: 16px; /* radius of circles */
+    max-width: 40%; /* You can adjust this to control the width */
+    padding: calc(0.25*var(--r));
+    height: auto; /* Keeps the aspect ratio */
+    max-height: 250px; /* Set a fixed max height */
+    border-radius: 12px;
+    display: block;
+    mask: 
+    linear-gradient(#000 0 0) no-repeat
+     50%/calc(100% - 2*var(--r)) calc(100% - 2*var(--r)), 
+    radial-gradient(farthest-side,#000 97%,#0000) 
+     0 0/calc(2*var(--r)) calc(2*var(--r)) round;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.deco-img {
+    max-width: 80%; /* You can adjust this to control the width */
+    object-fit: cover; /* Ensures the image fills the space */
+    margin-bottom: 10px; /* Adds spacing below the heart image */
+}
+
+ul {
+    list-style-type: square;
+}
+
+a {
+    color: #0066CC; /* Bright blue */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    margin-top: 20px;
+    background-color: #FFE5EC; /* Light blush pink */
+    padding: 40px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #6B0023; /* Burgundy border */
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus {
+    border-color: #FFD700; /* Gold */
+    outline: 3px solid #FFD700; /* High-contrast focus indicator */
+}
+
+button {
+    background-color: #9B2226; /* Deep red */
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #D00050; /* Vivid raspberry */
+}
+
+button:focus {
+    outline: 3px solid #FFD700; /* Gold focus ring */
+}
